@@ -82,3 +82,56 @@ export default function FilterScreen({ route, items }: ScreenProps) {
     </SafeAreaView>
   );
 }
+
+
+
+const styles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: c.bg, padding: 16 },
+
+  pickerWrap: { marginBottom: 12 },
+
+  pickerBox: {
+    backgroundColor: c.input,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: c.border,
+    overflow: "hidden",
+    height: 50,
+    justifyContent: "center",
+  },
+
+  picker: { color: c.text, height: 50, width: "100%" },
+
+  heading: {
+    color: c.text,
+    fontSize: 20,
+    fontWeight: "900",
+    textAlign: "center",
+    marginBottom: 8,
+  },
+
+  card: {
+    backgroundColor: c.card,
+    borderRadius: 16,
+    overflow: "hidden",
+    marginVertical: 8,
+    elevation: 3,
+  },
+
+  image: { width: "100%", height: 170 },
+
+  body: { padding: 12 },
+
+  title: { color: c.text, fontSize: 18, fontWeight: "800" },
+
+  chips: { flexDirection: "row", flexWrap: "wrap", gap: 6, marginTop: 8 },
+
+  chip: {
+    backgroundColor: c.input,
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+    borderRadius: 12,
+  },
+
+  chipText: { color: c.text, fontWeight: "700", fontSize: 12 },
+});
