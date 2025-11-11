@@ -162,3 +162,74 @@ export default function AddItemScreen({ navigation, addItem }: Props) {
   );
 }
 
+const styles = StyleSheet.create({
+  form: {
+    backgroundColor: c.bg,
+    padding: 20,
+    flexGrow: 1,
+  },
+  header: {
+    color: c.text,
+    fontSize: 22,
+    fontWeight: "900",
+    textAlign: "center",
+    marginBottom: 16,
+  },
+  input: {
+    backgroundColor: c.input,
+    color: c.text,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: c.border,
+    height: 50,
+    paddingHorizontal: 12,
+    marginVertical: 8,
+  },
+  label: {
+    color: c.meta,
+    marginLeft: 4,
+    marginBottom: 6,
+    fontWeight: "700",
+  },
+  pickerBox: {
+    backgroundColor: c.input,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: c.border,
+    overflow: "hidden",
+    height: 50,
+    justifyContent: "center",
+    marginBottom: 8,
+  },
+  picker: {
+    color: c.text,
+    height: 50,
+    width: "100%",
+  },
+  preview: {
+    width: "100%",
+    height: 200,
+    borderRadius: 12,
+    marginTop: 12,
+  },
+  save: {
+    backgroundColor: c.accent,
+    padding: 14,
+    borderRadius: 12,
+    marginTop: 16,
+    alignItems: "center",
+  },
+  saveText: {
+    color: "#1b1513",
+    fontWeight: "900",
+  },
+  cancel: {
+    alignItems: "center",
+    marginTop: 10,
+  },
+  cancelText: {
+    color: c.meta,
+    fontWeight: "800",
+  },
+});
+
