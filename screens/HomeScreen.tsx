@@ -3,7 +3,7 @@ import { Alert, FlatList, Image, SafeAreaView, StyleSheet, Text, TouchableOpacit
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { menuItem, RootStackParamlist } from "../type";
 
-type Props = NativeStackScreenProps<RootStackParamlist, "Home"> & {
+type Props = NativeStackScreenProps<RootStackParamlist, "HomeScreen"> & {
   items: menuItem[];
   removeItem: (id: string) => void;
   averages: { STARTER: string; MAIN: string; DESSERT: string };
